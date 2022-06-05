@@ -15,7 +15,8 @@ public class Main {
         element.sendKeys("My Heritage", Keys.ENTER);
         driver.findElement(By.xpath("//div[@class=\"g tF2Cxc\"]")).click();
         driver.findElement(By.xpath("//div[@class=\"get_dna_test_button\"]")).click();
-        driver.findElement(By.xpath("//div[@class=\"offer_price\"]")).getText();
+        String text = driver.findElement(By.className("offer_price")).getText();
+        System.out.println(text);
 
 
 //end
